@@ -1,6 +1,6 @@
 #include<avr/io.h>
 void main()
-{PORTB=0b00011110; PORTD=0b00000000;
+{DDRB=0b00011110; DDRD=0b00000000;
 while(1)
 { 	int d0=PINB&0b00000001;	int d1=PIND&0b10000000;
 	int d2=PIND&0b01000000;	int d3=PIND&0b00100000;
